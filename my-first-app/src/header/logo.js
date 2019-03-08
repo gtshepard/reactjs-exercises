@@ -1,12 +1,16 @@
 import React from 'react'
-
-const Logo = () => {
+import PropTypes from 'prop-types'
+const Logo = (props) => {
   return ( 
     <div className="Logo">
-      <a href ="#"> MyApp</a>
+      <a href ="#"> {props.title}</a>
     </div>
   )
 }
 
+Logo.propTypes  = {
+  title: PropTypes.string,
+}
 export default Logo 
+
 
